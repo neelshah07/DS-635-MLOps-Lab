@@ -1,0 +1,145 @@
+{
+  "answers": {
+    "fence_penalty_ratio": 2.247390396659708,
+    "graph_cpu_speedup": 17.4,
+    "launch_bound_elements": 65536,
+    "nosync_over_peak": 777.3333333333334,
+    "overlap_efficiency": 1.2154371407580278,
+    "peak_efficiency": 0.36790123456790125,
+    "peak_measured_tflops": 2.98,
+    "peak_vendor_tflops": 8.1,
+    "pinning_helps_below_mb": 256
+  },
+  "env": {
+    "ac_power": null,
+    "arch": "Tesla T4",
+    "backend": "CUDA 12.8",
+    "caps": {
+      "events": true,
+      "graphs": true,
+      "pinned": true,
+      "streams": true
+    },
+    "clock_ghz_reported": 1.59,
+    "device": "Tesla T4",
+    "exported_utc": "2026-08-18T10:03:36+00:00",
+    "iters": 30,
+    "matmul_n": 4096,
+    "multi_processor_count": 40,
+    "peak_tflops_declared": 8.1,
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.35",
+    "safe_mode": false,
+    "started_utc": "2026-08-18T08:48:24+00:00",
+    "torch": "2.11.0+cu128",
+    "vendor": "cuda",
+    "vram_gb": 15.64
+  },
+  "integrity": {
+    "sha256": "ab2d4b983bee1ba8"
+  },
+  "results": {
+    "fence": {
+      "intervals": [
+        1,
+        2,
+        5,
+        10,
+        25,
+        50,
+        100,
+        250,
+        500
+      ],
+      "n_ops": 500,
+      "totals_ms": [
+        8.611921333188851,
+        8.261120666854064,
+        4.7956486666104565,
+        4.497141666737055,
+        4.10141533332838,
+        4.002613000011479,
+        6.190288999884312,
+        4.287731999890336,
+        3.8322600000052867
+      ]
+    },
+    "graph": {
+      "captured": true,
+      "eager_cpu_ms": 1.8516167999950994,
+      "eager_gpu_ms": 1.4858207702636719,
+      "graph_cpu_ms": 0.10636339999109623,
+      "graph_gpu_ms": 0.5812998580932617,
+      "n_ops": 200
+    },
+    "overlap": {
+      "compute_ms": 45.386347500061675,
+      "copy_ms": 10.862117699980445,
+      "matmul_n": 4096,
+      "mb": 128,
+      "overlap_ms": 46.278059799988114,
+      "serial_ms": 48.42395159994339
+    },
+    "peak": {
+      "derived_clock_ghz": 1.59,
+      "derived_lanes": 64,
+      "derived_tflops": 8.1408,
+      "derived_units": 40,
+      "efficiency": 0.36839467237410606,
+      "measured_sizes": [
+        1024,
+        2048,
+        4096
+      ],
+      "measured_tflops": 2.983996846230259,
+      "measured_tflops_all": [
+        2.575206916812448,
+        2.8478299821903086,
+        2.983996846230259
+      ],
+      "vendor_source": "NVIDIA Tesla T4 specifications",
+      "vendor_tflops": 8.1
+    },
+    "submission": {
+      "flop": 137438953472,
+      "implied_tflops": {
+        "event": 2.85948522195182,
+        "nosync": 6296.394276616973,
+        "sync": 2.9156601803932207
+      },
+      "iters": 30,
+      "n": 4096,
+      "t_event_ms": 48.064229329427086,
+      "t_nosync_ms": 0.021828199987794505,
+      "t_sync_ms": 47.1381933999813
+    },
+    "transfer": {
+      "bw_pageable_gbs": [
+        3.9095248285277293,
+        5.829169892450195,
+        6.096710380522598,
+        6.80371016621804,
+        6.872199356625478
+      ],
+      "bw_pinned_gbs": [
+        10.608435956414091,
+        11.69556373021125,
+        12.060697950423663,
+        12.229723768876521,
+        12.343841303466125
+      ],
+      "sizes_mb": [
+        1,
+        4,
+        16,
+        64,
+        256
+      ],
+      "skipped": null
+    }
+  },
+  "schema_version": 2,
+  "student": {
+    "name": "Neel Shah",
+    "roll": "202518044"
+  }
+}
