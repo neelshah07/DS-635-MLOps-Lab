@@ -1,0 +1,68 @@
+{
+  "roll": 202518044,
+  "name": "NEEL",
+  "env": {
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+    "python": "3.13.15",
+    "torch": "2.11.0+cpu",
+    "safetensors": "0.8.0",
+    "linux": true
+  },
+  "results": {
+    "formats": {
+      "pt": {
+        "file_mb": 300.1,
+        "cold_s": 0.783,
+        "warm_s": 0.229,
+        "cold_read_bytes_mb": 300.1,
+        "load_rss_delta_mb": 286.1,
+        "load_rchar_mb": 300.1
+      },
+      "safetensors": {
+        "file_mb": 300.1,
+        "cold_s": 0.003,
+        "warm_s": 0.0,
+        "cold_read_bytes_mb": 0.7,
+        "load_rss_delta_mb": 0.2,
+        "load_rchar_mb": 0.0,
+        "explicit_read_rchar_mb": 300.1
+      }
+    },
+    "stride": {
+      "transpose_same_ptr": true,
+      "contig_sizes_mb": [
+        16.8,
+        67.1,
+        151.0,
+        268.4
+      ],
+      "contig_times_ms": [
+        52.04,
+        196.04,
+        439.9,
+        417.21
+      ],
+      "safetensors_refused_view": true
+    },
+    "trust": {
+      "default_fired": false,
+      "blocked": true,
+      "unsafe_fired": true
+    },
+    "gguf_real": {
+      "arch": "llama",
+      "vocab_size": 49153,
+      "n_kv_read": 22,
+      "unhandled_type_tags": [
+        5
+      ]
+    }
+  },
+  "answers": {
+    "warm_faster_than_cold": true,
+    "safetensors_rss_near_zero": true,
+    "contiguous_cost_grows": true,
+    "weights_only_blocked_it": true,
+    "safetensors_still_cannot": "protect against malicious weights, surrounding repository code, or unknown provenance"
+  }
+}
